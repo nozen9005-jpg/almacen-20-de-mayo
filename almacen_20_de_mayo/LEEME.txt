@@ -1,0 +1,36 @@
+ALMACÉN 20 DE MAYO — PÁGINA WEB
+
+ARCHIVOS
+- index.html: estructura y contenido de la página.
+- styles.css: colores, diseño y adaptación a celulares.
+- script.js: productos, búsqueda, categorías y botones de WhatsApp.
+
+PROBAR EN TU COMPUTADORA
+1. Descomprime el archivo ZIP.
+2. Abre la carpeta y haz doble clic en index.html.
+3. Para revisar los cambios, guarda los archivos y recarga el navegador.
+
+CAMBIAR LOS PRODUCTOS Y PRECIOS
+1. Abre script.js con Bloc de notas, Visual Studio Code u otro editor.
+2. Busca el arreglo `const products = [`.
+3. Cada producto tiene nombre, categoría, precio, emoji, descripción, etiqueta y color.
+4. Cambia los ejemplos por tus productos reales. El precio se escribe como número, por ejemplo price: 1.25.
+5. Para añadir productos, copia un bloque entre llaves y cambia los datos. Usa una coma entre productos.
+6. Las fotos actualmente son emojis ilustrativos; puedes reemplazarlos por imágenes reales cuando las tengas.
+
+WHATSAPP
+El número de contacto está en index.html y script.js como 50767305150. Si cambia, actualiza ambos archivos. Usa el formato internacional sin +, espacios ni guiones.
+
+PUBLICAR GRATIS CON GITHUB PAGES
+1. Crea una cuenta en https://github.com/ si no tienes una.
+2. Crea un repositorio nuevo, por ejemplo `almacen-20-de-mayo`.
+3. Sube index.html, styles.css y script.js a la raíz del repositorio.
+4. En el repositorio entra en Settings → Pages.
+5. En Build and deployment, elige Deploy from a branch; selecciona la rama `main` y la carpeta `/ (root)`, y guarda.
+6. Espera a que GitHub Pages publique el sitio. La dirección aparecerá en Settings → Pages y normalmente tendrá formato https://TU-USUARIO.github.io/almacen-20-de-mayo/
+7. Comparte esa dirección con tus clientes.
+
+IMPORTANTE
+- Los nombres y precios incluidos son ejemplos, no un inventario real del almacén.
+- GitHub Pages publica archivos estáticos; este catálogo no procesa pagos ni registra pedidos.
+- El catálogo usa Google Fonts si hay conexión a internet, pero la página también funciona con fuentes alternativas.

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de productos de Almacén 20 de Mayo, en Natá, Coclé, Panamá.">
+  <meta name="theme-color" content="#0f766e">
+  <title>Almacén 20 de Mayo | Catálogo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">📍 Natá, Coclé, Panamá <span>•</span> ¡Gracias por apoyar el comercio local!</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Almacén 20 de Mayo, inicio">
+      <span class="brand-mark">20<span>✦</span></span>
+      <span class="brand-copy"><strong>ALMACÉN</strong><b>20 DE MAYO</b><small>TODO LO QUE BUSCAS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-whatsapp" href="https://wa.me/50767305150" target="_blank" rel="noopener">WhatsApp ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="pulse"></span> TU ALMACÉN EN NATÁ</span>
+        <h1>¡Todo lo que necesitas,<br><em>en un solo lugar!</em></h1>
+        <p>Encuentra útiles escolares, juguetes, electrónica, artículos para el hogar y mucho más.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogo">Explorar productos <span>↓</span></a>
+          <a class="btn btn-light" href="https://wa.me/50767305150" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+        <div class="hero-note"><span>✓</span> Atención local <span>✓</span> Catálogo fácil de consultar</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de artículos variados">
+        <div class="sunburst"></div>
+        <div class="float-card card-top">🎨 <span>Útiles escolares</span></div>
+        <div class="product-stack">
+          <div class="book book-one"><span>IDEAS</span></div>
+          <div class="book book-two"><span>CREA</span></div>
+          <div class="pencil pencil-one"></div><div class="pencil pencil-two"></div>
+          <div class="toy-ball">●</div>
+          <div class="mini-box">★</div>
+        </div>
+        <div class="float-card card-bottom">✨ <span>¡Muchas opciones!</span></div>
+        <span class="decor decor-a">✦</span><span class="decor decor-b">✿</span><span class="decor decor-c">＋</span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">📚</span><span><b>Escolares</b><small>Para estudiar y crear</small></span></div>
+      <div><span class="trust-icon">🎁</span><span><b>Variedad</b><small>Para todos los días</small></span></div>
+      <div><span class="trust-icon">📱</span><span><b>Consulta fácil</b><small>Desde tu celular</small></span></div>
+    </section>
+
+    <section class="section categories-section" id="categorias">
+      <div class="section-heading">
+        <div><span class="eyebrow">DESCUBRE NUESTRA VARIEDAD</span><h2>Explora por <em>categoría</em></h2></div>
+        <p>Elige una categoría para encontrar lo que buscas.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-tile cat-school" data-category="Útiles escolares y papelería"><span class="category-emoji">✏️</span><b>Útiles escolares</b><small>Cuadernos, lápices y más</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile cat-toys" data-category="Juguetes"><span class="category-emoji">🧸</span><b>Juguetes</b><small>Ideas para regalar</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile cat-tech" data-category="Electrónica"><span class="category-emoji">🎧</span><b>Electrónica</b><small>Accesorios y tecnología</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile cat-fabric" data-category="Sedería y artículos variados"><span class="category-emoji">🧵</span><b>Sedería y variedades</b><small>Materiales y accesorios</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile cat-home" data-category="Artículos para el hogar"><span class="category-emoji">🏠</span><b>Hogar</b><small>Detalles útiles</small><span class="tile-arrow">↗</span></button>
+        <button class="category-tile cat-other" data-category="Otros productos"><span class="category-emoji">🎁</span><b>Otros productos</b><small>¡Siempre hay algo más!</small><span class="tile-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading catalog-heading">
+        <div><span class="eyebrow">NUESTRO CATÁLOGO</span><h2>Productos <em>destacados</em></h2><p class="demo-notice">⚠️ Estos son productos de ejemplo. Cambia nombres, precios y fotos por los de tu almacén.</p></div>
+        <div class="catalog-count" id="productCount">12 productos</div>
+      </div>
+      <div class="catalog-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar un producto..." aria-label="Buscar productos"><kbd>Buscar</kbd></label>
+        <div class="filter-wrap"><label for="categoryFilter">Categoría:</label><select id="categoryFilter"><option value="all">Todas las categorías</option></select></div>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>🔎</span><h3>No encontramos productos</h3><p>Prueba otra palabra o selecciona otra categoría.</p><button class="btn btn-primary" id="clearFilters">Ver todos</button></div>
+    </section>
+
+    <section class="contact-banner" id="contacto">
+      <div class="contact-icon">💬</div>
+      <div><span class="eyebrow">¿TIENES ALGUNA CONSULTA?</span><h2>¡Estamos para ayudarte!</h2><p>Escríbenos para consultar disponibilidad y precios.</p></div>
+      <a class="btn btn-dark" href="https://wa.me/50767305150?text=Hola%2C%20Almac%C3%A9n%2020%20de%20Mayo.%20Quisiera%20consultar%20por%20un%20producto." target="_blank" rel="noopener">Escribir por WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">20<span>✦</span></span><span class="brand-copy"><strong>ALMACÉN</strong><b>20 DE MAYO</b><small>TODO LO QUE BUSCAS</small></span></a>
+    <div class="footer-location"><b>📍 Natá, Coclé, Panamá</b><span>Catálogo de productos y precios</span></div>
+    <a class="footer-link" href="https://wa.me/50767305150" target="_blank" rel="noopener">WhatsApp: 6730-5150 ↗</a>
+    <div class="footer-bottom"><span>© <span id="year"></span> Almacén 20 de Mayo</span><span>Los precios y la disponibilidad pueden cambiar. Confirma antes de comprar.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
